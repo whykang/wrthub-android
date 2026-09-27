@@ -13,14 +13,14 @@
 ## 截图
 
 <p align="center">
+  <img src="docs/screenshots/1.jpg" width="250">
   <img src="docs/screenshots/2.jpg" width="250">
   <img src="docs/screenshots/3.jpg" width="250">
-  <img src="docs/screenshots/4.jpg" width="250">
 </p>
 <p align="center">
+  <img src="docs/screenshots/4.jpg" width="250">
   <img src="docs/screenshots/5.jpg" width="250">
   <img src="docs/screenshots/6.jpg" width="250">
-  <img src="docs/screenshots/7.jpg" width="250">
 </p>
 
 ## 功能
