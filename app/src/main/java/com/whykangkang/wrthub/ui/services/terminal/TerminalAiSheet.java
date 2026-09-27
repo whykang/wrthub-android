@@ -23,12 +23,12 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.annotation.ColorInt;
 import androidx.annotation.DrawableRes;
 import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.widget.NestedScrollView;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -76,7 +76,12 @@ public class TerminalAiSheet {
     private final List<Turn> conversation = new ArrayList<>();
 
     private final BottomSheetDialog dialog;
-    private ScrollView scroll;
+    /**
+     * 必须用 NestedScrollView:BottomSheetBehavior 只认开了嵌套滚动的子视图。
+     * 普通 ScrollView 默认不开,往下拖会被当成拖动整个面板拦截掉,
+     * 对话区滚不回顶部,上面的内容就看不到了。
+     */
+    private NestedScrollView scroll;
     private LinearLayout messages;
     private TextView intro;
     private EditText input;
@@ -164,7 +169,7 @@ public class TerminalAiSheet {
         glp.topMargin = dp(6);
         root.addView(grabber, glp);
 
-        scroll = new ScrollView(activity);
+        scroll = new NestedScrollView(activity);
         scroll.setFillViewport(true);
         messages = vertical(dp(14));
         messages.setPadding(dp(16), dp(18), dp(16), dp(16));
