@@ -1,0 +1,24 @@
+<!--
+  对应 iOS 的 pencil.circle.fill:实心蓝圆 + 白色铅笔。
+  颜色写死在图形里,不走 tint —— 单色 tint 会把铅笔也染蓝。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="@color/ios_blue"
+        android:pathData="M12,2C17.52,2 22,6.48 22,12C22,17.52 17.52,22 12,22C6.48,22 2,17.52 2,12C2,6.48 6.48,2 12,2Z" />
+
+    <group
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translateX="6"
+        android:translateY="6">
+        <path
+            android:fillColor="@android:color/white"
+            android:pathData="M3,17.25V21h3.75L17.81,9.94l-3.75,-3.75L3,17.25zM20.71,7.04c0.39,-0.39 0.39,-1.02 0,-1.41l-2.34,-2.34c-0.39,-0.39 -1.02,-0.39 -1.41,0l-1.83,1.83 3.75,3.75 1.83,-1.83z" />
+    </group>
+</vector>

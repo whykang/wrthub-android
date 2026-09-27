@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- iOS 系统色板(深色模式) -->
+    <color name="bg_grouped">#000000</color>
+    <color name="bg_card">#1C1C1E</color>
+    <color name="label_primary">#FFFFFF</color>
+    <color name="label_secondary">#8E8E93</color>
+    <color name="label_tertiary">#636366</color>
+    <color name="separator">#38383A</color>
+    <color name="ios_blue">#0A84FF</color>
+    <color name="ios_green">#30D158</color>
+    <color name="ios_red">#FF453A</color>
+    <color name="ios_orange">#FF9F0A</color>
+    <color name="tab_unselected">#7C7C80</color>
+    <color name="toast_bg">#E6FFFFFF</color>
+    <color name="ios_purple">#BF5AF2</color>
+    <color name="ios_indigo">#5E5CE6</color>
+    <color name="ios_teal">#40C8E0</color>
+    <color name="ios_yellow">#FFD60A</color>
+    <color name="ios_gray">#8E8E93</color>
+    <color name="ios_gray3">#48484A</color>
+    <color name="ios_gray5">#2C2C2E</color>
+    <color name="bg_inset">#2C2C2E</color>      <!-- tertiarySystemBackground -->
+</resources>

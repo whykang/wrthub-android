@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 名称徽章底:颜色在代码里按链路状态改(setBackgroundTintList) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="6dp" />
+    <solid android:color="@color/ios_gray" />
+</shape>

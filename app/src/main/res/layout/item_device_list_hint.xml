@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  设备列表底部的操作说明。
+  做成列表的 footer 项而不是钉在屏幕底边 —— iOS 用的是 insetGrouped 的
+  section footer,紧跟在最后一张卡片下面,会随列表一起滚动。
+-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="16dp"
+    android:text="@string/device_list_hint"
+    android:textColor="@color/label_secondary"
+    android:textSize="13sp" />

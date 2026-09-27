@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name=".WrtHubApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Wrthub"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".ui.login.DeviceListActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.AddEditDeviceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.login.RouterScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.devices.BlacklistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.diagnostics.NetworkDiagnosticsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.log.SystemLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.interfaces.NetworkInterfacesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.ssh.SshConfigActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.wifi.WiFiScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.wifi.WiFiEditActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.cron.CronTasksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.led.LedConfigActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.proxy.ProxyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.firewall.PortForwardAddActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.firewall.TrafficRuleAddActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.samba.SambaServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.samba.SambaShareEditActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.speedtest.SpeedTestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.vnstat.VnstatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.vnstat.VnstatConfigActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.filebrowser.FileBrowserBrowseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.filebrowser.FilePreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.filebrowser.FileBrowserActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.ftp.FtpServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.ftp.FtpBrowserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.packages.PackageManagerActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.services.ratelimit.DeviceRateLimitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.firewall.FirewallManagementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.web.WebAccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.wifi.WiFiAddActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.settings.FavoritePickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.HomeMetricsEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.settings.WidgetConfigActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="false" />
+        <!-- 旋转 / 键盘变化时不重建:终端会话和 AI 对话都在这个页面里,重建就断了 -->
+        <activity
+            android:name=".ui.services.terminal.TerminalActivity"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|keyboard"
+            android:exported="false"
+            android:theme="@style/Theme.Wrthub.Terminal"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.settings.AiSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.services.wol.WolActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".widget.WrtHubWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.whykangkang.wrthub.widget.REFRESH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/wrthub_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

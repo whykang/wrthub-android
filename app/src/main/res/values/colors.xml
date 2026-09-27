@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- iOS 系统色板(浅色模式) -->
+    <color name="bg_grouped">#F2F2F7</color>          <!-- systemGroupedBackground -->
+    <color name="bg_card">#FFFFFF</color>             <!-- secondarySystemGroupedBackground -->
+    <color name="label_primary">#000000</color>
+    <color name="label_secondary">#6D6D72</color>     <!-- secondaryLabel -->
+    <color name="label_tertiary">#AEAEB2</color>
+    <color name="separator">#C6C6C8</color>
+    <color name="ios_blue">#007AFF</color>
+    <color name="ios_green">#34C759</color>
+    <color name="ios_red">#FF3B30</color>
+    <color name="ios_orange">#FF9500</color>
+    <color name="tab_unselected">#999999</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="toast_bg">#E6000000</color>
+    <color name="ios_purple">#AF52DE</color>
+    <color name="ios_indigo">#5856D6</color>
+    <color name="ios_teal">#30B0C7</color>
+    <color name="ios_yellow">#FFCC00</color>
+    <color name="ios_gray">#8E8E93</color>
+    <color name="ios_gray3">#C7C7CC</color>
+    <color name="ios_gray5">#E5E5EA</color>
+    <color name="bg_inset">#F2F2F7</color>      <!-- tertiarySystemBackground -->
+    <!-- AI 终端:整页固定深色,与 iOS TerminalViewController.Palette 一致,不随系统浅色 -->
+    <color name="term_bg">#121419</color>
+    <color name="term_bar">#1A1C23</color>
+    <color name="term_key">#2E323D</color>
+    <color name="term_key_text">#EBEBEB</color>
+    <color name="term_hairline">#14FFFFFF</color>
+    <color name="term_text_dim">#A6A6A6</color>
+    <!-- AI 对话面板(iOS TerminalAIViewController.Palette) -->
+    <color name="ai_bg">#1A1C24</color>
+    <color name="ai_card">#12141A</color>
+    <color name="ai_bubble">#335CBF</color>
+    <color name="ai_command">#9ED99E</color>
+    <color name="ai_secondary">#999999</color>
+    <color name="ai_input_bg">#0FFFFFFF</color>
+    <color name="ai_box_bg">#0DFFFFFF</color>
+</resources>

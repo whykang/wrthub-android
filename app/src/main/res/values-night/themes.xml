@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Wrthub" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ios_blue</item>
+        <item name="colorSecondary">@color/ios_blue</item>
+        <item name="colorAccent">@color/ios_blue</item>
+        <item name="android:windowBackground">@color/bg_grouped</item>
+        <item name="android:statusBarColor">@color/bg_grouped</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/label_primary</item>
+        <item name="android:textColorSecondary">@color/label_secondary</item>
+    </style>
+</resources>

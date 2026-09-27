@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  和 App 里的卡片同一套外观(Widget.Wrthub.Card:16dp 圆角、bg_card 底色)。
+  原来是饱和的蓝色渐变,和整个 App 的浅色卡片风格对不上。
+  bg_card / separator 都有 values-night,深色模式自动跟随。
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="20dp" />
+    <solid android:color="@color/bg_card" />
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/separator" />
+</shape>

@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 应用主题:iOS 分组列表风格 -->
+    <style name="Theme.Wrthub" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ios_blue</item>
+        <item name="colorSecondary">@color/ios_blue</item>
+        <item name="colorAccent">@color/ios_blue</item>
+        <item name="android:windowBackground">@color/bg_grouped</item>
+        <item name="android:statusBarColor">@color/bg_grouped</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:textColorPrimary">@color/label_primary</item>
+        <item name="android:textColorSecondary">@color/label_secondary</item>
+    </style>
+
+    <!-- 卡片:cornerRadius 16dp、无边框、极轻阴影 -->
+    <style name="Widget.Wrthub.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">1dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="cardBackgroundColor">@color/bg_card</item>
+    </style>
+
+    <!-- iOS 大标题 -->
+    <style name="TextAppearance.Wrthub.LargeTitle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/label_primary</item>
+    </style>
+
+    <!-- 分组小节标题(iOS grouped header) -->
+    <style name="TextAppearance.Wrthub.SectionHeader" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/label_secondary</item>
+    </style>
+
+    <!-- 卡片内的行输入框(无边框,iOS insetGrouped 风格) -->
+    <style name="Widget.Wrthub.RowEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/label_primary</item>
+        <item name="android:textColorHint">@color/label_tertiary</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <!-- 行左侧固定标签(iOS 表单 "标签 + 值" 行) -->
+    <style name="TextAppearance.Wrthub.RowLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/label_primary</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 主操作按钮(iOS 蓝填充) -->
+    <style name="Widget.Wrthub.PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/ios_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- 次要文字按钮 -->
+    <style name="Widget.Wrthub.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/ios_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- AI 终端:整页固定深色(与 iOS overrideUserInterfaceStyle = .dark 一致) -->
+    <style name="Theme.Wrthub.Terminal" parent="Theme.Wrthub">
+        <item name="android:windowBackground">@color/term_bar</item>
+        <item name="android:statusBarColor">@color/term_bar</item>
+        <item name="android:navigationBarColor">@color/term_bar</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
