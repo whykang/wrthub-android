@@ -10,6 +10,19 @@
 
 > 📱 **用 iPhone？** WrtHub 已经上架 App Store，如果你需要，可以去 App Store 直接搜索 **WrtHub**。
 
+## 截图
+
+<p align="center">
+  <img src="docs/screenshots/2.jpg" width="250">
+  <img src="docs/screenshots/3.jpg" width="250">
+  <img src="docs/screenshots/4.jpg" width="250">
+</p>
+<p align="center">
+  <img src="docs/screenshots/5.jpg" width="250">
+  <img src="docs/screenshots/6.jpg" width="250">
+  <img src="docs/screenshots/7.jpg" width="250">
+</p>
+
 ## 功能
 
 **概览**
