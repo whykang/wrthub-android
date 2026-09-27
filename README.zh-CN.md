@@ -13,14 +13,14 @@
 ## 截图
 
 <p align="center">
-  <img src="docs/screenshots/1.jpg" width="250">
-  <img src="docs/screenshots/2.jpg" width="250">
-  <img src="docs/screenshots/3.jpg" width="250">
+  <img src="docs/screenshots/01-overview.jpg" width="250">
+  <img src="docs/screenshots/02-network-ports.jpg" width="250">
+  <img src="docs/screenshots/03-devices.jpg" width="250">
 </p>
 <p align="center">
-  <img src="docs/screenshots/4.jpg" width="250">
-  <img src="docs/screenshots/5.jpg" width="250">
-  <img src="docs/screenshots/6.jpg" width="250">
+  <img src="docs/screenshots/04-system-services.jpg" width="250">
+  <img src="docs/screenshots/05-network-services.jpg" width="250">
+  <img src="docs/screenshots/06-ai-assistant.jpg" width="250">
 </p>
 
 ## 功能
