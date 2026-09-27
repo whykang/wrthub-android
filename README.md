@@ -97,3 +97,11 @@ app/src/main/java/com/whykangkang/wrthub/
 └── util/       Helpers
 app/src/main/assets/   AI system prompt and the ttyd terminal bridge script
 ```
+
+## License
+
+Copyright (C) 2026 Wang Hongyue ([whykang](https://github.com/whykang))
+
+WrtHub for Android is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License v3.0](LICENSE) as published by the Free Software Foundation.
+
+In short: you may use, study, modify and share this code, but if you distribute an app based on it, you must release its full source code under GPL-3.0 as well and keep this copyright notice. It comes with no warranty.

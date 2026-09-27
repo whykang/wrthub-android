@@ -97,3 +97,11 @@ app/src/main/java/com/whykangkang/wrthub/
 └── util/       工具类
 app/src/main/assets/   AI 系统提示词与 ttyd 终端桥接脚本
 ```
+
+## 开源协议
+
+Copyright (C) 2026 Wang Hongyue（[whykang](https://github.com/whykang)）
+
+WrtHub 安卓版以 [GNU 通用公共许可证 第 3 版（GPL-3.0）](LICENSE) 发布。
+
+简单来说：你可以使用、研究、修改和分享这份代码；但如果你基于它发布 App，必须同样以 GPL-3.0 公开完整源代码，并保留本版权声明。本软件不提供任何担保。具体条款以 [LICENSE](LICENSE) 原文为准。
